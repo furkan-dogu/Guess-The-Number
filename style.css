@@ -1,63 +1,91 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    height: 100vh;
+  height: 100vh;
 }
 
 .container {
-    height: 100%;
-    background-image: url("https://picsum.photos/id/96/1960/1200");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+  min-height: 100%;
+  background-image: url("https://picsum.photos/id/96/1960/1200");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
-    margin-top: 5rem;
-    color: whitesmoke;
-    text-align: center;
+  margin-top: 5rem;
+  color: whitesmoke;
+  text-align: center;
 }
 
 .input-div {
-    margin-top: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .input {
-    width: 150px;
-    padding: .5rem 1rem .5rem .5rem;
-    border: none;
-    outline: none;
-    background-color: blanchedalmond;
-    font-weight: bold;
-    font-size: 1rem;
+  width: 150px;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  background-color: blanchedalmond;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .btn {
-    padding: .5rem 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: coral;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: coral;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
 .text {
-    text-align: center;
-    color: whitesmoke;
-    margin-top: 3rem;
-    font-size: 1.2rem;
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 310px) {
+  h1 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .input-div {
+    flex-direction: column;
+    margin: 0.5rem;
+  }
+
+  .input {
+    width: 100px;
+    padding: 0 5px;
+  }
+
+  .btn {
+    padding: 0.3rem;
+    font-size: .8rem;
+  }
+
+  .text {
+    margin: 0.5rem 0 1rem;
+    font-size: 1rem;
+  }
 }
