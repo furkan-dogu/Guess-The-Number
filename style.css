@@ -67,6 +67,12 @@ h1 {
   font-size: 1.2rem;
 }
 
+.btn:hover {
+  scale: 1.05;
+  background-color: orangered;
+  color: white;
+}
+
 .btn-restart {
   display: none;
   padding: 1rem 3rem;
