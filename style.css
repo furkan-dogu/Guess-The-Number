@@ -56,11 +56,19 @@ h1 {
   cursor: pointer;
 }
 
-.text {
+.btn-again {
+  display: none;
+}
+
+.text, .text2 {
   text-align: center;
   color: whitesmoke;
   margin-top: 3rem;
   font-size: 1.5rem;
+}
+
+.text2 {
+  display: none;
 }
 
 @media screen and (max-width: 310px) {
@@ -84,7 +92,7 @@ h1 {
     font-size: .8rem;
   }
 
-  .text {
+  .text, .text2 {
     margin: 0.5rem 0 1rem;
     font-size: 1rem;
   }
