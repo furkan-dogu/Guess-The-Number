@@ -5,7 +5,7 @@ const firstNum = document.querySelector(".first")
 const secondNum = document.querySelector(".second")
 const text2 = document.querySelector(".text2")
 const testNum = document.querySelector(".test-number")
-const again = document.querySelector(".btn-again")
+const restart = document.querySelector(".btn-restart")
 const score = document.querySelector(".score")
 const scoreNum = document.querySelector(".score-number")
 const h1 = document.querySelector("h1")
@@ -55,7 +55,7 @@ window.addEventListener("load", () => {
     input.focus()
 })
 
-again.addEventListener("click", () => {
+restart.addEventListener("click", () => {
         random = Math.floor(Math.random() * 101);
         window.location.reload()
 })
@@ -63,7 +63,7 @@ again.addEventListener("click", () => {
 const tekrar = () => {
     text.textContent = ""
     check.style.display = "none"
-    again.style.display = "block"
+    restart.style.display = "block"
     text2.textContent = ""
     score.style.display = "none"
     input.style.display = "none"
