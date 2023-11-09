@@ -12,7 +12,6 @@ const h1 = document.querySelector("h1")
 const container = document.querySelector(".container")
 
 let random = Math.floor(Math.random() * 101)
-console.log(random);
 
 check.addEventListener("click", () => {
     let tahmin = parseInt(input.value)
@@ -56,10 +55,8 @@ window.addEventListener("load", () => {
     input.focus()
 })
 
-
 again.addEventListener("click", () => {
         random = Math.floor(Math.random() * 101);
-        console.log(random);
         window.location.reload()
 })
 
