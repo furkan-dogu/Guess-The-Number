@@ -24,12 +24,12 @@ check.addEventListener("click", () => {
             check.style.display = "none"
             tekrar()
         } else if(tahmin < random) {
-            text.textContent = "🔽 Increase 🔽"
+            text.textContent = "🔼 Increase 🔼"
             firstNum.textContent = tahmin
             text2.style.display = "block"
             testNum.textContent++
         } else {
-            text.textContent = "🔼 Reduce 🔼"
+            text.textContent = "🔽 Reduce 🔽"
             secondNum.textContent = tahmin
             text2.style.display = "block" 
             testNum.textContent++

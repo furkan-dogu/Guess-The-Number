@@ -11,15 +11,15 @@ body {
 
 .container {
   min-height: 100%;
-  background-image: url("https://picsum.photos/id/96/1960/1200");
+  background-image: url("img.png");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 h1 {
@@ -69,6 +69,17 @@ h1 {
 
 .text2 {
   display: none;
+}
+
+.score-div {
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+}
+
+.score {
+  color: whitesmoke;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 310px) {
