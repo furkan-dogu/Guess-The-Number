@@ -6,6 +6,10 @@
 
 This simple browser game is based on trying to guess a specific number. The goal of the game is to correctly guess a randomly selected number within a specified range.
 
+## Live Project Link
+
+You can access the live version of the project [here](https://guess-the-number-azure.vercel.app/).
+
 ## Features
 
 - Range: Between 0 and 100 (inclusive).
